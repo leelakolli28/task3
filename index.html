@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#carousel">carousel</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#jokes">Jokes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero">
+    <h1>Welcome to our pastry world</h1>
+    <p>Taste the magic in every layer</p>
+  </section>
+
+  <!-- Image Carousel Section -->
+  <section id="carousel">
+    <h2>Our Delicious Bakes</h2>
+    <div class="carousel-container">
+      <img class="carousel-slide" src="https://imgcdn.floweraura.com/cherrilicious-black-forest-cake-9814470ca-C_0.jpg" alt="Bakery item 1">
+      <img class="carousel-slide" src="https://www.flowersacrossindia.com/cdn/shop/products/MGDCAK2017021_800x.jpg?v=1533117090" alt="Bakery item 2">
+      <img class="carousel-slide" src="https://mrbrownbakery.com/image/images/QHEOKZphDkCwQw7m2Z8VMmEamNrZsA3hOE36Csog.jpeg?p=full" alt="Bakery item 3">
+      <img class="carousel-slide" src="https://tfcakes.in/images/products/210224_094905_046_601.jpg" alt="Bakery item 4">
+    </div>
+    <button id="prev-btn">Prev</button>
+    <button id="next-btn">Next</button>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-images">
+      <img src="https://nataliewaybakes.com/wp-content/uploads/2021/02/IMG_7258-e1612907997937.jpg" alt="Croissant">
+      <img src="https://img.freepik.com/premium-photo/sacher-chocolate-cake-with-coffee_508449-686.jpg" alt="Cake">
+      <img src="https://bakeneto.com/wp-content/uploads/2024/05/Butterscotch-Pasrty_Bakeneto.webp" alt="Donut">
+      <img src="https://ocakes.in/storage/app/public/images/item/item-643d2228cd125.jpg" alt="Donut">
+      <img src="https://img.freepik.com/premium-photo/piece-vanilla-cake-with-cherry-top_974629-102413.jpg" alt="Donut">
+    </div>
+
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz">
+    <h2>Quiz: What's Your Favorite Bakery Item?</h2>
+    <div id="quiz-container">
+      <p id="question"></p>
+      <div id="answers"></div>
+      <button id="next-button" onclick="nextQuestion()">Next Question</button>
+      <button id="submit-button" onclick="submitQuiz()">Submit Quiz</button>
+    </div>
+  </section>
+
+  <!-- Joke Section -->
+  <section id="jokes">
+    <h2>Joke of the Day</h2>
+    <p id="joke-text"></p>
+    <button id="next-joke" onclick="getJoke()">Next Joke</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

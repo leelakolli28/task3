@@ -1,0 +1,174 @@
+* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://t4.ftcdn.net/jpg/03/08/40/43/360_F_308404381_LqyMIXDPOR6Ut1TqE2cJRQdxomGsQegc.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+  height:800px;
+  width:2000px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #2c3e50;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar ul li a:hover {
+  color: #f39c12;
+}
+
+/* Carousel Section */
+#carousel {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  
+}
+
+.carousel-slide {
+  width: 100%;
+  display: none;
+}
+
+#prev-btn, #next-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+  background-color: #f39c12;
+}
+
+/* Menu Section */
+#menu {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .menu-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .menu-images img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+/* Quiz Section */
+#quiz-container {
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f39c12;
+}
+
+/* Joke Section */
+#jokes {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-images img {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #carousel .carousel-container {
+    width: 100%;
+  }
+}
